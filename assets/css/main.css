@@ -19,6 +19,8 @@
 		vertical-align: baseline;
 	}
 
+
+
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
@@ -1654,18 +1656,29 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6 {
+	h1, h2, h3, h4, h5 {
 		color: #555;
 		font-weight: 400;
 		line-height: 1.5;
 		margin: 0 0 1em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+		h1 a, h2 a, h3 a, h4 a, h5 a {
 			color: inherit;
 			text-decoration: none;
 		}
 
+h6{
+		color: white;
+		font-weight: 400;
+		line-height: 1.5;
+		margin: 0 0 1em 0;
+	}
+
+		h6 a {
+			color: inherit;
+			text-decoration: none;
+		}
 	h2 {
 		font-size: 1.85em;
 		font-weight: 300;
@@ -1685,14 +1698,16 @@
 
 	h4 {
 		font-size: 1.5em;
+		color:white;
 	}
 
 	h5 {
 		font-size: 0.9em;
 	}
 
+/* LETRAS PEQUEÑAS */
 	h6 {
-		font-size: 0.7em;
+		font-size: 0.9em;
 	}
 
 	sub {
@@ -1758,6 +1773,16 @@
 
 	.align-right {
 		text-align: right;
+	}
+
+	p {
+		margin: 0 0 2em 0;
+		text-align: justify;
+	}
+
+	blockquote {
+		margin: 0 0 2em 0;
+		text-align: justify;
 	}
 
 	.inner {
@@ -2198,7 +2223,7 @@
 			border: solid 3px white;
 			padding: 3em 2em;
 			border-radius: 15px 50px;
-			background-color: #f0f7b4;
+			background-color: rgba(241,231,103,1);
 		}
 
 			.box.person h3 {
@@ -2298,16 +2323,25 @@
 		list-style: decimal;
 		margin: 0 0 2em 0;
 		padding-left: 1.25em;
+
+		
 	}
 
 		ol li {
 			padding-left: 0.25em;
+			text-align: justify;
+			color:#f2c113;
 		}
+
+		ol li span {
+            color: #9a9a9a;
+        }
 
 	ul {
 		list-style: disc;
 		margin: 0 0 2em 0;
 		padding-left: 1em;
+
 	}
 
 		ul li {
@@ -2553,8 +2587,8 @@
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		background-color: transparent;
-		box-shadow: inset 0 0 0 3px #6cc091;
-		color: #6cc091 !important;
+		box-shadow: inset 0 0 0 3px #f4b942;
+		color: white !important;
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
@@ -2576,7 +2610,9 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: rgba(108, 192, 145, 0.15);
+			
+			background-color: #feaf06;
+
 		}
 
 		input[type="submit"]:active,
@@ -2584,7 +2620,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: rgba(108, 192, 145, 0.15);
+			background-color: rgba(188, 192, 145, 0.15);
 		}
 
 		input[type="submit"].icon,
@@ -3149,7 +3185,7 @@
 /* Footer */
 #footer {
 		padding: 2em 0 1em 0;
-		background-color:#F6F6F6;
+		background-color:#f2f2f2;
 		color: black;
 		text-align: center;
 	}
@@ -3220,3 +3256,5 @@
 		.imagen {
 			height: 35px;
 		}
+
+		
