@@ -2,13 +2,8 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
 
-/*
-	Projection by TEMPLATED
-	templated.co @templatedco
-	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
-*/
 
-/* Reset */
+
 
 	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 		margin: 0;
@@ -18,8 +13,6 @@
 		font: inherit;
 		vertical-align: baseline;
 	}
-
-
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -51,7 +44,7 @@
 		-webkit-text-size-adjust: none;
 	}
 
-/* Box Model */
+/* Box */
 
 	*, *:before, *:after {
 		-moz-box-sizing: border-box;
@@ -1663,12 +1656,35 @@
 		margin: 0 0 1em 0;
 	}
 
-		h1 a, h2 a, h3 a, h4 a, h5 a {
+		h1 a, h3 a, h4 a, h5 a {
 			color: inherit;
 			text-decoration: none;
 		}
-
-h6{
+			/*------------------------------------ NOTICIAS --------------------------------------*/
+			/* Encabezado de noticias */
+			h2 a {
+			color: inherit;
+		  	text-decoration: none;
+		  	font-weight: bold;
+			}
+			h2 a:hover {
+			  text-decoration: underline;
+			  color: #feaf06;
+			  font-weight: bold;
+			}
+			.scrollup {
+			    width: 60px;
+			    height: 60px;
+			    position: fixed;
+			    bottom: 50px;
+			    right: 50px;
+			    display: none;
+			    text-indent: -9999px;
+			    background: url('arrow.png') no-repeat;
+			    background-color: inherit;
+			}
+			/* ----------------------------------------------------------------------------*/
+	h6{
 		color: white;
 		font-weight: 400;
 		line-height: 1.5;
@@ -1679,6 +1695,9 @@ h6{
 			color: inherit;
 			text-decoration: none;
 		}
+
+
+
 	h2 {
 		font-size: 1.85em;
 		font-weight: 300;
@@ -1763,12 +1782,18 @@ h6{
 			margin: 3em 0;
 		}
 
+		hr.majoru {
+			margin: 1.5em 0;
+		}
+
+
 	.align-left {
 		text-align: left;
 	}
 
 	.align-center {
 		text-align: center;
+
 	}
 
 	.align-right {
@@ -1930,10 +1955,10 @@ h6{
 				width: 50%;
 			}
 			.flex.flex-4 .box {
-			width: 21%;
+			width: 25%;
 		}
 			.box.person {
-			border: solid 1px rgba(255, 255, 255, 0.25);
+			border: solid 1px #E5CC7B;
 			padding: 3em 1.5em;
 		}
 			
@@ -2223,8 +2248,10 @@ h6{
 			border: solid 3px white;
 			padding: 3em 2em;
 			border-radius: 15px 50px;
-			background-color: rgba(241,231,103,1);
-		}
+			/*background-color: #E5CC7B;*/
+			background-color: #E5CC7B;
+
+}
 
 			.box.person h3 {
 				margin: 0;
@@ -2586,9 +2613,9 @@ h6{
 		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-		background-color: transparent;
+		background-color: #e5cc7b;
 		box-shadow: inset 0 0 0 3px #f4b942;
-		color: white !important;
+		color: black !important;
 		border-radius: 30px;
 		border: 0;
 		cursor: pointer;
@@ -2604,6 +2631,7 @@ h6{
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
+
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2670,9 +2698,9 @@ h6{
 		input[type="button"].alt,
 		button.alt,
 		.button.alt {
-			background-color: transparent;
+			background-color: #f1e767;
 			box-shadow: inset 0 0 0 3px #FFF;
-			color: #fff !important;
+			color: #FFF !important;
 		}
 
 			input[type="submit"].alt:hover,
@@ -2680,7 +2708,7 @@ h6{
 			input[type="button"].alt:hover,
 			button.alt:hover,
 			.button.alt:hover {
-				background-color: #7ec89e;
+				background-color: #f2be41;
 			}
 
 			input[type="submit"].alt:active,
@@ -2688,7 +2716,7 @@ h6{
 			input[type="button"].alt:active,
 			button.alt:active,
 			.button.alt:active {
-				background-color: #7ec89e;
+				background-color: #f2be41;
 			}
 
 			input[type="submit"].alt.icon:before,
@@ -2704,7 +2732,7 @@ h6{
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #6cc091;
+			background-color: #eace69;
 			color: #ffffff !important;
 		}
 
@@ -2713,7 +2741,7 @@ h6{
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #7ec89e;
+				background-color: #eace69;
 			}
 
 			input[type="submit"].special:active,
@@ -2733,7 +2761,7 @@ h6{
 		button:disabled,
 		.button.disabled,
 		.button:disabled {
-			background-color: #9a9a9a !important;
+			background-color: #c9c9c9 !important;
 			box-shadow: inset 0 -0.15em 0 0 rgba(0, 0, 0, 0.15);
 			color: #fff !important;
 			cursor: default;
@@ -2984,18 +3012,22 @@ h6{
 
 	#banner {
 		padding: 8em 0 9em 0;
-		background-image: url(../../images/banner.jpg);
+		background-image: url(../../images/banner2.jpg);
 		background-size: cover;
 		background-position: bottom;
 		background-attachment: fixed;
 		background-repeat: no-repeat;
 		text-align: center;
 		position: relative;
+
 	}
 
 		#banner:before {
 			content: '';
-			background: rgba(75, 75, 93, 0.85);
+			/* PENDIENTE 
+			background:  rgba(136, 120, 200,0.65);*/
+			background: rgba(75, 75, 95, 0.75); 
+
 			position: absolute;
 			width: 100%;
 			height: 100%;
